@@ -519,25 +519,48 @@ body {
     margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
+  .container {
+    width: 95%;
+    max-width: 340px; }
+  .menu__logo {
+    font-size: 1.3rem; }
   .contacts__phone {
     margin-right: 0;
     color: #ffffff;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 1.25rem; }
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.64rem; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__content {
-    max-width: 22.86rem; }
-  .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
-  .hero__button {
-    display: block;
-    min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.3rem;
+    max-width: 25.2rem;
+    line-height: 132.83%; }
+  .hero {
+    padding-top: 11.1rem; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__content {
+      max-width: 34rem; }
+    .hero__text {
+      max-width: 32rem;
+      font-family: 'Futura Book', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 135.84%;
+      margin-top: 1.3rem;
+      margin-bottom: 3.4rem; }
+    .hero__button {
+      display: block;
+      width: 99%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 2.7rem;
+      min-height: 5rem;
+      font-size: 1.4rem;
+      border-radius: 0; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
