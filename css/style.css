@@ -319,14 +319,14 @@ template {
   display: none; }
 
 .button {
-  padding: 11px 24px;
+  padding: 10px 19px;
   border: none;
   border-radius: 2px;
-  text-transform: uppercase;
-  font-size: 0.93rem; }
+  text-transform: uppercase; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
+    font-size: 1.02rem;
     background-color: #e3b873;
     color: #ffffff;
     box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
@@ -334,9 +334,11 @@ template {
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
+    min-width: 14.785rem;
     border: 1px solid #ffffff;
     background-color: transparent;
     color: #ffffff;
+    font-size: 1rem;
     transition: background 0.3s; }
     .button--outline:hover {
       background-color: #e3b873;
@@ -395,7 +397,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  margin-right: 2.85rem;
+  margin-right: 2.63rem;
   transition: color 0.2s; }
   .nav__item:hover {
     color: #e3b873; }
@@ -434,10 +436,10 @@ body {
     font-size: 1.57rem;
     max-width: 500px;
     line-height: 131%;
-    margin-bottom: 3rem; }
+    margin-bottom: 3.3rem; }
   .hero__button {
-    margin-right: 20px;
-    padding: 20px 35px; }
+    margin-right: 17px;
+    padding: 17px 26px; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -453,6 +455,8 @@ body {
     bottom: 0;
     min-width: 17.6rem;
     min-height: 6.92rem;
+    font-family: 'Yeseva One', cursive;
+    font-size: 0.85rem;
     background-color: #131313;
     text-transform: uppercase;
     color: #ffffff;
@@ -464,7 +468,7 @@ body {
       height: 30px;
       border: 2px solid #e3b873;
       border-radius: 50%;
-      margin-left: 12px; }
+      margin-left: 18px; }
 
 .instagram {
   display: flex;
@@ -485,7 +489,7 @@ body {
       width: 50px;
       height: 1px;
       background-color: #e3b873;
-      margin-left: 8px; }
+      margin-left: 10px; }
 
 .title {
   margin: 0;
