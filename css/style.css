@@ -500,6 +500,10 @@ body {
   .title--primary {
     color: #e3b873; }
 
+@media screen and (max-width: 1263px) {
+  html {
+    font-size: 12px; } }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 10px; }
