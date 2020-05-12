@@ -1,6 +1,10 @@
 @media screen and ( max-width: 1263px )
   html
     font-size: 12px
+  .card
+    &__image
+      &::before
+        width: 100%
 @media screen and ( max-width: 1200px )
   html
     font-size: 10px
@@ -20,6 +24,9 @@
     flex-direction: column
     align-items: center
   .types
+    &__card
+      margin-bottom: 5.9rem
+  .designe
     &__card
       margin-bottom: 5.9rem
   .card
@@ -70,6 +77,51 @@
       min-height: 5rem
       font-size: 1.4rem
       border-radius: 0
+  .types
+    padding: 0
+  .card
+    &__title
+      font-size: 1.5rem
+      line-height: 140%
+      font-style: normal;
+      font-weight: normal;
+    &__list
+      font-size: 1.3rem
+      line-height: 170%
+      margin-bottom: 3.7rem
+    &__text
+      margin-top: -14.5rem 
+      padding: 2rem 3rem
+      max-width: 27rem
+    &__pricetag
+      bottom: -0.6rem
+      font-size: 1.5rem
+      font-style: normal;
+      font-weight: normal;
+      padding: 1.25rem 3.1rem
+    &__priceitem
+      bottom: -0.6rem
+      font-size: 1.5rem
+      font-style: normal;
+      font-weight: normal;
+      padding: 1.2rem 4.7rem
+      box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3)
+  .section-title
+    margin-bottom: 3.9rem
+    &__heading
+      font-size: 2.2rem
+  .designe
+    padding: 0
+    &__section-title
+      margin: 0
+    &__card
+      max-width: 34rem
+      margin-bottom: 6.3rem
+  .section-subtitle
+    padding-top: 0.6rem
+    max-width: 30rem
+    font-size: 1.5rem
+    margin-bottom: 3.9rem
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down

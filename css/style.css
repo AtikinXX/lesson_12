@@ -505,6 +505,9 @@ img {
   .title--primary {
     color: #e3b873; }
 
+.section-title__heading {
+  font-size: 1.428rem; }
+
 .types__section-title {
   margin-bottom: 2rem; }
 
@@ -532,10 +535,10 @@ img {
   margin-bottom: 0.7rem; }
 
 .card__list {
-  margin: 0;
-  padding: 0 0 0 1rem;
+  margin: 0 0 0 1.2rem;
+  padding: 0;
   font-size: 1.07rem;
-  line-height: 1.79rem;
+  line-height: 1.85rem;
   color: #959595;
   margin-bottom: 2.5rem; }
 
@@ -543,16 +546,54 @@ img {
   position: absolute;
   left: 0;
   bottom: -1.79rem;
-  font-size: 1.29rem;
+  font-size: 1.285rem;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   background-color: #e3b873;
   color: #ffffff;
   padding: 1.214rem 2.6rem; }
 
+.section-subtitle {
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.428rem;
+  line-height: 2rem;
+  font-family: 'Futura Book', cursive;
+  max-width: 52.857rem;
+  text-align: center;
+  text-transform: inherit;
+  margin-top: 1.3rem;
+  margin-bottom: 3rem; }
+  .section-subtitle__text {
+    color: #363636; }
+
+.card__image {
+  position: relative; }
+  .card__image::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 98%;
+    height: 99%;
+    background: rgba(0, 0, 0, 0.3); }
+
+.card__priceitem {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  font-size: 1.285rem;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  background-color: #e3b873;
+  color: #ffffff;
+  padding: 1.214rem 5.2rem 1.214rem 2.6rem; }
+
 @media screen and (max-width: 1263px) {
   html {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .card__image::before {
+    width: 100%; } }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -573,6 +614,8 @@ img {
     flex-direction: column;
     align-items: center; }
   .types__card {
+    margin-bottom: 5.9rem; }
+  .designe__card {
     margin-bottom: 5.9rem; }
   .card__text {
     margin-left: 0; } }
@@ -619,7 +662,51 @@ img {
       margin-bottom: 2.7rem;
       min-height: 5rem;
       font-size: 1.4rem;
-      border-radius: 0; } }
+      border-radius: 0; }
+  .types {
+    padding: 0; }
+  .card__title {
+    font-size: 1.5rem;
+    line-height: 140%;
+    font-style: normal;
+    font-weight: normal; }
+  .card__list {
+    font-size: 1.3rem;
+    line-height: 170%;
+    margin-bottom: 3.7rem; }
+  .card__text {
+    margin-top: -14.5rem;
+    padding: 2rem 3rem;
+    max-width: 27rem; }
+  .card__pricetag {
+    bottom: -0.6rem;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: normal;
+    padding: 1.25rem 3.1rem; }
+  .card__priceitem {
+    bottom: -0.6rem;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: normal;
+    padding: 1.2rem 4.7rem;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
+  .section-title {
+    margin-bottom: 3.9rem; }
+    .section-title__heading {
+      font-size: 2.2rem; }
+  .designe {
+    padding: 0; }
+    .designe__section-title {
+      margin: 0; }
+    .designe__card {
+      max-width: 34rem;
+      margin-bottom: 6.3rem; }
+  .section-subtitle {
+    padding-top: 0.6rem;
+    max-width: 30rem;
+    font-size: 1.5rem;
+    margin-bottom: 3.9rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
