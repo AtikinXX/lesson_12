@@ -712,7 +712,9 @@ img {
     padding-top: 0.6rem;
     max-width: 30rem;
     font-size: 1.5rem;
-    margin-bottom: 3.9rem; } }
+    margin-bottom: 3.9rem; }
+  .invisibal {
+    display: none; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
