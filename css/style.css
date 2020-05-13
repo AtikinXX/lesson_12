@@ -577,6 +577,8 @@ img {
     width: 98%;
     height: 99%;
     background: rgba(0, 0, 0, 0.3); }
+  .card__image--mobile1 {
+    display: none; }
 
 .card__priceitem {
   position: absolute;
@@ -691,6 +693,10 @@ img {
     font-weight: normal;
     padding: 1.2rem 4.7rem;
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
+  .card__image--img1 {
+    display: none; }
+  .card__image--mobile1 {
+    display: block; }
   .section-title {
     margin-bottom: 3.9rem; }
     .section-title__heading {
