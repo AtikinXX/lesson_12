@@ -688,6 +688,42 @@ img {
     line-height: 1.285rem;
     padding: 1.257rem 3.3rem; }
 
+#scroll {
+  display: inline-block;
+  background: #e3b873;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 299; }
+
+#scroll::after {
+  content: "^";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+  z-index: 300; }
+
+#scroll:hover {
+  cursor: pointer;
+  background-color: #333; }
+
+#scroll:active {
+  background-color: #555; }
+
+#scroll.show {
+  opacity: 1;
+  visibility: visible; }
+
 @media screen and (max-width: 1263px) {
   html {
     font-size: 12px; }
@@ -816,3 +852,7 @@ img {
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
     display: none; } }
+
+@media (min-width: 500px) {
+  #scroll {
+    margin: 10px; } }
