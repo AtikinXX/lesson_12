@@ -680,7 +680,8 @@ img {
     .modal__input:last-of-type {
       margin-bottom: 0; }
   .modal__policy {
-    margin-bottom: 2.65rem; }
+    margin-bottom: 2.65rem;
+    font-size: 1.142rem; }
   .modal__button {
     align-self: flex-end;
     font-size: 1rem;
