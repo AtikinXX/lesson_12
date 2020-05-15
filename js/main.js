@@ -24,8 +24,8 @@
 
 $(document).ready(function () {
   var modal = $('.modal'),
-      modalBtn = $('[data-toggle=modal]'),
-      closeBtn = $('.modal__close');
+    modalBtn = $('[data-toggle=modal]'),
+    closeBtn = $('.modal__close');
 
   modalBtn.on('click', function () {
     modal.toggleClass('modal--visible');
@@ -33,6 +33,25 @@ $(document).ready(function () {
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   });
+  
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+  var next = $('.swiper-button-next');
+  var prev = $('.swiper-button-prev');
+  var bullets = $('.swiper-pagination');
+
+  next.css('left', prev.width() + 10 + bullets.width() + 10)
+  bullets.css('left', prev.width() + 10)
+
 });
 
 var btn = $('#scroll');
@@ -47,5 +66,7 @@ $(window).scroll(function () {
 
 btn.on('click', function (e) {
   e.preventDefault();
-  $('html, body').animate({ scrollTop: 0 }, '100');
+  $('html, body').animate({
+    scrollTop: 0
+  }, '100');
 });

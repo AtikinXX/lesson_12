@@ -1,0 +1,13 @@
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    margin-bottom: 2.42rem; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    font-family: 'Yeseva One', cursive;
+    line-height: 1.78rem;
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem; }
