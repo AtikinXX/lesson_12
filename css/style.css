@@ -398,8 +398,11 @@ template {
 .col-30 {
   flex-basis: 32%; }
 
-.col-50 {
-  width: 50%; }
+.col-39 {
+  width: 39%; }
+
+.col-60 {
+  width: 60%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -427,17 +430,6 @@ img {
       text-transform: uppercase;
       font-family: 'Yeseva One', cursive;
       line-height: 138%; }
-      .section-title__heading--primary {
-        color: #e3b873; }
-    .section-title__word {
-      display: flex;
-      align-items: center; }
-      .section-title__word::after {
-        content: '';
-        width: 90px;
-        height: 2px;
-        background-color: #e3b873;
-        margin-left: 2rem; }
     .section-title__text {
       font-size: 1.28rem;
       line-height: 2.07rem;
@@ -759,28 +751,72 @@ img {
   opacity: 1;
   visibility: visible; }
 
+.project {
+  padding-top: 128px; }
+  .project-title {
+    text-align: left;
+    margin-bottom: 2.1rem; }
+    .project-title__heading {
+      text-transform: uppercase;
+      font-family: 'Yeseva One', cursive;
+      line-height: 138%;
+      font-size: 1.928rem;
+      letter-spacing: -0.07em; }
+      .project-title__heading--primary {
+        color: #e3b873; }
+    .project-title__text {
+      font-size: 1.28rem;
+      line-height: 2.07rem;
+      max-width: 31.57rem; }
+    .project-title__word {
+      display: flex;
+      align-items: center; }
+      .project-title__word::after {
+        width: 680px;
+        height: 482px;
+        content: '';
+        width: 90px;
+        height: 2px;
+        background-color: #e3b873;
+        margin-left: 2.5rem; }
+
+.swiper__image {
+  margin-top: 0.92rem;
+  margin-left: 0.8rem; }
+
+.swiper-wrapper {
+  padding-bottom: 76px; }
+
+.swiper-slider__value {
+  font-size: 1.071rem; }
+
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
   .swiper-slide__text {
-    flex-basis: 50%;
-    margin-bottom: 2.42rem;
-    padding-bottom: 2rem; }
+    flex-basis: 35%;
+    margin-bottom: 0;
+    padding-bottom: 1.7rem;
+    margin-right: 1.25rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     font-family: 'Yeseva One', cursive;
     line-height: 1.78rem;
     color: #e3b873;
     text-transform: uppercase;
-    margin-bottom: 0.64rem; }
+    margin-bottom: 0.6rem; }
 
-.swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.3); }
-  .swiper-pagination-bullet-active {
-    background-color: #ffffff; }
+.swiper-pagination {
+  margin-right: 8px; }
+  .swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 10px;
+    height: 10px; }
+    .swiper-pagination-bullet-active {
+      background-color: #ffffff; }
 
 .swiper-button-prev, .swiper-button-next {
-  bottom: 0;
+  bottom: 0px;
   top: auto;
   background-size: 42px;
   width: 42px;
@@ -797,7 +833,11 @@ img {
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
-  bottom: -1px; }
+  bottom: -1px;
+  margin: 0 10px; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 9px; }
 
 @media screen and (max-width: 1263px) {
   html {
@@ -873,6 +913,52 @@ img {
       min-height: 5rem;
       font-size: 1.4rem;
       border-radius: 0; }
+    .hero::after {
+      display: none; }
+  .project {
+    margin: 0;
+    padding: 0;
+    padding-top: 1.6rem; }
+    .project-title__heading {
+      font-size: 2.2rem;
+      margin-bottom: 2.5rem; }
+    .project-title__text {
+      font-size: 1.4rem;
+      line-height: 158.48%;
+      width: 85%; }
+    .project-title__word::after {
+      display: none; }
+  .swiper-container {
+    max-height: 24.5rem; }
+  .swiper-slide {
+    margin-top: 0.4rem;
+    width: 100%;
+    padding-right: 0; }
+    .swiper-slide__text {
+      flex-basis: 43%;
+      padding-bottom: 2rem; }
+    .swiper-slide__heading {
+      font-size: 1.4rem;
+      margin-bottom: 1.1rem;
+      line-height: 135.84%; }
+  .swiper-slider__value {
+    font-size: 1.4rem; }
+  .swiper-button-next, .swiper-button-prev {
+    bottom: auto;
+    top: 22rem; }
+  .swiper__image {
+    max-height: 20rem;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  .swiper-pagination {
+    top: 20rem; }
+  .col-39 {
+    width: 100%; }
+  .col-60 {
+    width: 100%;
+    padding: 0;
+    margin: 0; }
   .types {
     padding: 0; }
   .card__title {
