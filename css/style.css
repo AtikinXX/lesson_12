@@ -384,6 +384,9 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center;
+    font-size: 1.142rem; }
 
 .container {
   width: 85%;
@@ -637,6 +640,9 @@ img {
 .control__label {
   margin-bottom: -8px; }
 
+.control__input {
+  color: rgba(19, 19, 19, 0.6); }
+
 .control__button {
   padding: 1.2rem 4.55rem;
   font-size: 1.071rem; }
@@ -691,6 +697,9 @@ img {
   background-color: #e3b873;
   color: #ffffff;
   padding: 1.214rem 2.6rem; }
+
+.designe {
+  padding-bottom: 27rem; }
 
 .section-subtitle {
   margin-right: auto;
@@ -773,10 +782,12 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.2rem; }
-    .modal__input:last-of-type {
-      margin-bottom: 0; }
+  .modal__input:last-of-type {
+    margin-bottom: 0; }
   .modal__policy {
     margin-bottom: 2.65rem;
     font-size: 1.142rem; }
@@ -911,6 +922,51 @@ img {
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 9px; }
+
+.footer {
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
+  padding-top: 3rem; }
+  .footer__wrap {
+    background: #181818;
+    max-width: 63.07rem;
+    margin: auto;
+    margin-top: -19rem;
+    margin-bottom: 3.714rem;
+    padding: 2.5rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 1.428rem;
+    text-align: center;
+    margin-bottom: 3.214rem;
+    margin-top: 0; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 37.142rem;
+    margin: auto; }
+  .footer__input {
+    padding-top: 0.3rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3.2rem; }
+      .footer__input-group--full-width {
+        flex-basis: 100%;
+        margin-bottom: 2rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.6rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.285rem 4.45rem;
+    font-size: 1.071rem; }
+  .footer__menu {
+    background-color: #131313;
+    padding: 4.285rem 0; }
 
 @media screen and (max-width: 1263px) {
   html {
@@ -1141,7 +1197,41 @@ img {
     font-size: 1.5rem;
     margin-bottom: 3.9rem; }
   .invisibal {
-    display: none; } }
+    display: none; }
+  .desctop {
+    display: none; }
+  .mobile {
+    display: flex; }
+  .footer {
+    background: #131313;
+    padding: 0; }
+    .footer__wrap {
+      background: #131313;
+      margin: 0;
+      padding: 2.5rem 0; }
+    .footer__title {
+      font-size: 2rem;
+      margin-bottom: 5.2rem; }
+    .footer__input {
+      font-size: 1.8rem; }
+      .footer__input-group:nth-child(3) {
+        margin-bottom: 2.2rem; }
+      .footer__input-group {
+        flex-basis: 100%;
+        margin-bottom: 6.2rem; }
+    .footer__label {
+      font-size: 1.5rem; }
+    .footer__button {
+      width: 100%;
+      font-size: 1.5rem;
+      padding: 1.68rem 0; }
+    .footer__menu {
+      display: none; }
+  .policy {
+    margin-bottom: 6.6rem; }
+    .policy__label {
+      font-size: 1.6rem;
+      justify-content: left; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
