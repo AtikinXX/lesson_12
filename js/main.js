@@ -55,9 +55,10 @@ $(document).ready(function () {
 
   new WOW().init();
 
-  //Валидачия формы
+  //Валидация формы
   $('.modal__form').validate({
     errorClass: "invalid",
+    errorElement: "div",
     rules: {
       // строчное правило
       userName: {
@@ -80,6 +81,7 @@ $(document).ready(function () {
         maxlength: "Имя не короче 2 букв и не более 15"
       }, 
       userPhone: "Заполните поле",
+      checkboxModal: "Вы не согласны?",
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
@@ -88,6 +90,7 @@ $(document).ready(function () {
   });
   $('.footer__form').validate({
     errorClass: "invalid",
+    errorElement: "div",
     rules: {
       // строчное правило
       userName: {
@@ -110,7 +113,7 @@ $(document).ready(function () {
         maxlength: "Имя не короче 2 букв и не более 15"
       },
       userPhone: "Заполните поле",
-      checkboxFooter: "",
+      checkboxFooter: "Вы не согласны?",
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
@@ -118,7 +121,8 @@ $(document).ready(function () {
     }
   });
   $('.control__form').validate({
-    errorClass: "invalidControl",
+    errorClass: "invalid",
+    errorElement: "div",
     rules: {
       // строчное правило
       userName: {
@@ -141,7 +145,7 @@ $(document).ready(function () {
         maxlength: "Имя не короче 2 букв и не более 15"
       },
       userPhone: "Заполните поле",
-      checkboxControl: "",
+      checkboxControl: "Вы не согласны?",
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
@@ -149,7 +153,7 @@ $(document).ready(function () {
     }
   });
   // маска для номера телефона
-  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "Ваш номер телефона:"});
 });
 
 var btn = $('#scroll');
