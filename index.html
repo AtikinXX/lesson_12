@@ -168,7 +168,7 @@
           Оставьте
           заявку ниже чтобы получить ссылку на трансляцию.
         </p>
-        <form action="#" class="form control__form">
+        <form action="send.php" method="POST" class="form control__form">
           <div class="control__input-group">
             <label for="user-name" class="label form__label control__label">Имя</label>
             <input type="text" name="userName" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
@@ -354,7 +354,7 @@
     <div class="container">
       <div class="footer__wrap">
         <div class="footer__title">Остались вопросы?</div>
-        <form action="#" class="form footer__form">
+        <form action="send.php" method="POST" class="form footer__form">
           <div class="input-group footer__input-group">
             <label for="user-name" class="label footer__label label--light">Имя</label>
             <input type="text" name="userName" class="input form__input footer__input input--light" id="user-name"
@@ -380,10 +380,10 @@
       <div class="footer__block">
         <div class="text footer__text">
           <span class="text__footer">Ростов на дону, Торговый центр Plaza
-            Прямой телефон +7 (999) 768 32 99</span>
+            Прямой телефон <a class="text__footer--number" href="#">+7 (999) 768 32 99</a></span>
           <div class="footer__icons">
-            <img class="footer-icon-1" src="./img/footer-icon-1.svg" alt="icon">
-            <img class="footer-icon-2" src="./img/footer-icon-2.svg" alt="icon">
+            <a href="#"><img class="footer-icon-1" src="./img/footer-icon-1.svg" alt="icon"></a>
+            <a href="#"><img class="footer-icon-2" src="./img/footer-icon-2.svg" alt="icon"></a>
           </div>
         </div>
         <div class="map footer__map" id="map">
@@ -415,7 +415,7 @@
     <div class="modal__dialog" id="modalClose">
       <button class="modal__close"></button>
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
-      <form action="#" class="form modal__form">
+      <form action="send.php" method="POST" class="form modal__form">
         <div class="input-group modal__input-group">
           <label for="user-name" class="label form__label label--light">Имя</label>
           <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name"

@@ -1017,6 +1017,10 @@ img {
     margin-bottom: 4rem;
     margin-top: 2.5rem; }
 
+.text__footer--number {
+  text-decoration: none;
+  color: #e3b873; }
+
 #checkboxFooter-error {
   margin-left: 15rem; }
 
