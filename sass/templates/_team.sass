@@ -1,0 +1,66 @@
+.team
+  &-card
+    position: relative
+    width: 345px
+    &__image
+      padding-left: 35px
+      padding-top: 35px
+      width: 100%
+      height: 100%
+      object-fit: cover
+      left: 120px
+    &__image-wrap
+      position: relative
+      overflow: hidden
+      width: 307px
+      height: 394px
+      &::before
+        position: absolute
+        content: ''  
+        top: 0
+        left: 0
+        height: 70px
+        width: 70px
+        background: $primary url('../img/team1.svg') no-repeat center
+        box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5)
+      &:nth-of-type(1)::before
+        background: url('../img/team2.svg') no-repeat center 
+    &__title
+      position: absolute
+      bottom: -55px
+      left: 55px
+      background: $light
+      width: 16.642rem
+      margin: auto
+      text-align: center
+    &__text
+      font-size: 1.42rem
+      max-width: 40.57rem
+      text-align: center
+      margin: 8rem auto 0
+      &::before
+        content: ''
+        display: block
+        margin: auto
+        margin-bottom: 1.9rem
+        width: 55px
+        height: 2px
+        background-color: $primary
+        border-radius: 30px
+    &__name
+      font-size: 1.285rem
+      margin-top: 1.51rem
+      color: $black
+      font-family: 'Yeseva One', cursive
+      margin-bottom: 9px
+    &__place
+      font-size: 1.285rem
+      color: $secondary
+      margin-bottom: 1.714rem
+    &__experience
+      background: $primary
+      color: $light
+      font-family: 'Yeseva One', cursive
+      font-size: 0.928rem
+      padding: 1rem
+      text-transform: uppercase
