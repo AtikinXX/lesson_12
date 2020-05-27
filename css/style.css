@@ -722,6 +722,9 @@ img {
   color: #ffffff;
   padding: 1.214rem 2.6rem; }
 
+.designe {
+  margin-bottom: -35rem; }
+
 .section-subtitle {
   margin-right: auto;
   margin-left: auto;
@@ -1095,23 +1098,20 @@ img {
 .small-number {
   font-size: 0.6rem; }
 
-.team-card {
-  position: relative;
-  width: 345px; }
-  .team-card__image {
-    padding-left: 35px;
-    padding-top: 35px;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    left: 120px; }
-  .team-card__image-wrap {
+.team {
+  margin-top: -35rem; }
+  .team__section-title {
+    color: #ffffff; }
+    .team__section-title--subtitle {
+      font-size: 1.428rem;
+      text-align: center;
+      line-height: 1.928rem;
+      max-width: 32rem;
+      margin: 1.28rem auto 3.28rem; }
+  .team-card {
     position: relative;
-    overflow: hidden;
-    width: 307px;
-    height: 394px; }
-    .team-card__image-wrap::before {
+    width: 345px; }
+    .team-card::before {
       position: absolute;
       content: '';
       top: 0;
@@ -1119,48 +1119,73 @@ img {
       height: 70px;
       width: 70px;
       background: #e3b873 url("../img/team1.svg") no-repeat center;
-      box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5); }
-    .team-card__image-wrap:nth-of-type(1)::before {
-      background: url("../img/team2.svg") no-repeat center; }
-  .team-card__title {
-    position: absolute;
-    bottom: -55px;
-    left: 55px;
-    background: #ffffff;
-    width: 16.642rem;
-    margin: auto;
-    text-align: center; }
-  .team-card__text {
-    font-size: 1.42rem;
-    max-width: 40.57rem;
-    text-align: center;
-    margin: 8rem auto 0; }
-    .team-card__text::before {
-      content: '';
-      display: block;
+      box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+      z-index: 3; }
+    .team-card:nth-of-type(2)::before {
+      background: #e3b873 url("../img/team2.svg") no-repeat center; }
+    .team-card:nth-of-type(3)::before {
+      background: #e3b873 url("../img/team3.svg") no-repeat center; }
+    .team-card__image {
+      padding-left: 35px;
+      padding-top: 35px;
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      left: 120px; }
+    .team-card__image-wrap {
+      position: relative;
+      overflow: hidden;
+      width: 307px;
+      height: 394px; }
+    .team-card__title {
+      position: absolute;
+      bottom: -55px;
+      left: 55px;
+      background: #ffffff;
+      width: 16.642rem;
       margin: auto;
-      margin-bottom: 1.9rem;
-      width: 55px;
-      height: 2px;
-      background-color: #e3b873;
-      border-radius: 30px; }
-  .team-card__name {
-    font-size: 1.285rem;
-    margin-top: 1.51rem;
-    color: #181818;
-    font-family: 'Yeseva One', cursive;
-    margin-bottom: 9px; }
-  .team-card__place {
-    font-size: 1.285rem;
-    color: #959595;
-    margin-bottom: 1.714rem; }
-  .team-card__experience {
-    background: #e3b873;
-    color: #ffffff;
-    font-family: 'Yeseva One', cursive;
-    font-size: 0.928rem;
-    padding: 1rem;
-    text-transform: uppercase; }
+      text-align: center; }
+      .team-card__title--subtitle {
+        max-width: 42rem; }
+    .team-card__text {
+      font-size: 1.428rem;
+      line-height: 2.43rem;
+      max-width: 40.57rem;
+      text-align: center;
+      margin: 7.7rem auto 0; }
+      .team-card__text::before {
+        content: '';
+        display: block;
+        margin: auto;
+        margin-bottom: 0.6rem;
+        width: 55px;
+        height: 2px;
+        background-color: #e3b873;
+        border-radius: 30px; }
+    .team-card__name {
+      font-size: 1.285rem;
+      margin-top: 1.51rem;
+      color: #181818;
+      font-family: 'Yeseva One', cursive;
+      margin-bottom: 9px; }
+    .team-card__place {
+      font-size: 1.285rem;
+      color: #959595;
+      margin-bottom: 1.714rem; }
+    .team-card__experience {
+      background: #e3b873;
+      color: #ffffff;
+      font-family: 'Yeseva One', cursive;
+      font-size: 0.928rem;
+      padding: 1rem;
+      text-transform: uppercase; }
+
+.steps {
+  background: #131313 url("../img/bg-lines.svg") center no-repeat;
+  background-size: 100%;
+  padding-bottom: 35.78rem;
+  padding-top: 35.78rem; }
 
 @media screen and (max-width: 1263px) {
   html {
@@ -1173,12 +1198,53 @@ img {
     font-size: 10px; }
   .nav__item {
     margin-right: 1rem; }
-  .footer__map {
-    width: 750px; } }
+  .steps {
+    background-image: none;
+    padding: 0; }
+  .designe {
+    background: #131313; }
+    .designe__section-title {
+      color: #ffffff; }
+  .section-subtitle__text {
+    color: #ffffff; }
+  .team {
+    background: #131313;
+    padding-bottom: 10.5rem;
+    padding-top: 35rem; }
+    .team__row {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .team-card {
+      margin-bottom: 11rem; }
+      .team-card__text {
+        display: none; }
+      .team-card__image-wrap {
+        width: 339px;
+        height: 394px; }
+      .team-card__title {
+        left: 65px;
+        width: 23.342rem; }
+      .team-card__name {
+        font-size: 1.8rem;
+        margin-top: 2.1rem; }
+      .team-card__place {
+        font-size: 1.8rem;
+        margin-bottom: 2.2rem; }
+      .team-card__experience {
+        font-size: 1.3rem;
+        padding: 1.5rem; }
+  .footer {
+    background: #131313;
+    padding-top: 12rem; }
+    .footer__map {
+      width: 750px; } }
 
 @media screen and (max-width: 992px) {
   .nav {
     display: none; }
+  .team {
+    padding-top: 10rem; }
   .hero__instagram {
     display: none; }
   .hero__content {
@@ -1263,6 +1329,17 @@ img {
       width: 85%; }
     .project-title__word::after {
       display: none; }
+  .team {
+    padding: 0;
+    padding-top: 30rem;
+    padding-bottom: 0; }
+    .team__section-title--subtitle {
+      font-size: 1.5rem;
+      max-width: 100%;
+      line-height: 135.84%;
+      margin-bottom: 4.6rem; }
+    .team-card:not(:last-child) {
+      margin-bottom: 11rem; }
   .control {
     padding: 0;
     padding-top: 1rem;
@@ -1355,7 +1432,8 @@ img {
     margin: 0; }
   .types {
     padding: 0;
-    padding-top: 6rem; }
+    padding-top: 6rem;
+    padding-bottom: 6rem; }
   .card__title {
     font-size: 1.5rem;
     line-height: 140%;
@@ -1391,7 +1469,8 @@ img {
     .section-title__heading {
       font-size: 2.2rem; }
   .designe {
-    padding: 0; }
+    padding: 0;
+    padding-top: 3rem; }
     .designe__section-title {
       margin: 0; }
     .designe__card {

@@ -1,7 +1,30 @@
 .team
+  margin-top: -35rem
+  &__section-title
+    color: $light
+    &--subtitle
+      font-size: 1.428rem
+      text-align: center
+      line-height: 1.928rem
+      max-width: 32rem
+      margin: 1.28rem auto 3.28rem
   &-card
     position: relative
     width: 345px
+    &::before
+      position: absolute
+      content: ''  
+      top: 0
+      left: 0
+      height: 70px
+      width: 70px
+      background: $primary url('../img/team1.svg') no-repeat center
+      box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5)
+      z-index: 3
+    &:nth-of-type(2)::before
+      background: $primary url('../img/team2.svg') no-repeat center
+    &:nth-of-type(3)::before
+      background: $primary url('../img/team3.svg') no-repeat center
     &__image
       padding-left: 35px
       padding-top: 35px
@@ -14,17 +37,6 @@
       overflow: hidden
       width: 307px
       height: 394px
-      &::before
-        position: absolute
-        content: ''  
-        top: 0
-        left: 0
-        height: 70px
-        width: 70px
-        background: $primary url('../img/team1.svg') no-repeat center
-        box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5)
-      &:nth-of-type(1)::before
-        background: url('../img/team2.svg') no-repeat center 
     &__title
       position: absolute
       bottom: -55px
@@ -33,16 +45,19 @@
       width: 16.642rem
       margin: auto
       text-align: center
+      &--subtitle
+        max-width: 42rem
     &__text
-      font-size: 1.42rem
+      font-size: 1.428rem
+      line-height: 2.43rem
       max-width: 40.57rem
       text-align: center
-      margin: 8rem auto 0
+      margin: 7.7rem auto 0
       &::before
         content: ''
         display: block
         margin: auto
-        margin-bottom: 1.9rem
+        margin-bottom: 0.6rem
         width: 55px
         height: 2px
         background-color: $primary
