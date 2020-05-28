@@ -4,7 +4,9 @@
   "description": "Сайт по ремонту квартир",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,8 @@
     "gulp-sass": "^4.1.0"
   },
   "dependencies": {
-    "browser-sync": "^2.26.7"
-  }
+    "browser-sync": "^2.26.7",
+    "snyk": "^1.330.2"
+  },
+  "snyk": true
 }
