@@ -46,8 +46,11 @@
     flex-basis: 30%
   &__label
     margin-bottom: -8px
+    color: rgba(54, 54, 54, 0.5)
   &__input
-    color: rgba($dark, 0.6)
+    color: #363636
+    &::placeholder
+      color: #363636
   &__button
     padding: 1.2rem 4.55rem
     font-size: 1.071rem
@@ -61,5 +64,6 @@
   &__play
     position: relative
     margin: auto
+    cursor: pointer
 #checkboxControl-error
   margin-left: 24rem
