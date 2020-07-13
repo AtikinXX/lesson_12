@@ -230,7 +230,8 @@ $(document).ready(function () {
   
   	function playVideo(event) {
   	  event.target.playVideo();
-  	};
+    }
+    
   //Ymap start
   var spinner = $(".ymap-container").children(".loader");
   var check_if_load = 0;
@@ -380,9 +381,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
   document.documentElement.addEventListener("click", function (e) {
     if (!e.target.closest('.modal__dialog') & !e.target.closest('.button')) {
       document.querySelector('.modal').classList.remove('modal--visible');
-    };
+    }
   });
-  document.addEventListener('keydown', (e) => {
+  document.addEventListener('keydown', function (e) {
     if (e.keyCode == 27) {
       document.querySelector('.modal').classList.remove('modal--visible');
     }
